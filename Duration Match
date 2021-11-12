@@ -1,0 +1,30 @@
+package curso_java;
+
+import java.util.Scanner;
+
+public class duracaoJogo {
+
+	public static void main(String[] args) {
+		
+		int horaInicio, horaFinal, duracao;
+
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Por favor, informe a hora inicial");
+		horaInicio = sc.nextInt();
+		System.out.println("Agora, informe a hora final");
+		horaFinal = sc.nextInt();		
+		
+		if (horaInicio < horaFinal) {
+			duracao = horaFinal - horaInicio;
+		}
+		else {
+			duracao = 24 - horaInicio + horaFinal;
+		}
+		
+		System.out.println(" O jogo durou "+ duracao + " horas(s)");
+		
+		sc.close();
+	}
+
+}

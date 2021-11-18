@@ -22,7 +22,7 @@ public class exec03While {
 				    die ++;
 			  }
 			  else {
-				    System.out.println("Código Inválido");
+			System.out.println("Código Inválido");
 			}
 			x = sc.nextInt();			
 		}

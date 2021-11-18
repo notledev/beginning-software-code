@@ -1,0 +1,35 @@
+package estruturaRepetitiva;
+
+import java.util.Scanner;
+
+public class exec03While {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int alco, gas, die, x;
+		alco = 0;
+		gas = 0;
+		die = 0;
+		x = sc.nextInt();	
+		while (x !=4) {
+			  if (x == 1) { 
+				    alco ++;
+		  	}
+			  else if (x == 2) {
+				    gas ++;
+			  }
+			  else if (x == 3) {
+				    die ++;
+			  }
+			  else {
+				    System.out.println("Código Inválido");
+			}
+			x = sc.nextInt();			
+		}
+		System.out.println("MUITO OBRIGADO!!!");
+		System.out.println("Alcool: " + alco);
+		System.out.println("Gasolina: " + gas);
+		System.out.println("Diesel: " + die);
+		sc.close();
+	}
+}
